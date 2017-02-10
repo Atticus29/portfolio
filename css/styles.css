@@ -1,0 +1,28 @@
+.jumbotron h1{
+  font-size: 10;
+  font-family: monospace;
+}
+.projectTitle{
+  color: black;
+}
+p{
+  color: black;
+}
+.CommitDate{ /*I don't understand why p .CommitDate doesn't work*/
+  text-decoration: underline;
+}
+
+.contactInfo h2{
+  font-size: 10;
+  font-family: monospace;
+  font-weight: normal;
+}
+
+img{
+  float: left;
+  padding-right: 1%;
+}
+
+.landingHeader{
+  background-color: gray;
+}
