@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <title>About - Mark Fisher</title>
 </head>
-<body>
+<body class="about">
   <div class="container">
     <div class="container">
       <div class="row">
@@ -24,37 +24,140 @@
       </div>
       <div class="row contactInfo">
         <!-- <div class="panel panel-info"> -->
-          <div class="col-xs-6">
-            <h2>Mark Fisher</h2>
-            <h2>9421 North Portsmouth Avenue</h2>
-            <h2>Portland, Oregon</h2>
-            <h2>97203</h2>
-          </div>
-          <div class="col-xs-6">
-            <h2>P: 609.577.9078</h2>
-            <h2>E: mark.aaron.fisher@gmail.com</h2>
-          </div>
+        <div class="col-xs-6">
+          <h4>Mark Fisher</h4>
+          <h4>9421 North Portsmouth Avenue</h4>
+          <h4>Portland, Oregon</h4>
+          <h4>97203</h4>
+        </div>
+        <div class="col-xs-6">
+          <h4>P: <span class="contactNumOrHandle">609.577.9078</span></h4>
+          <h4>E: <span class="contactNumOrHandle">mark.aaron.fisher@gmail.com</span></h4>
+        </div>
         <!-- </div> -->
       </div>
+      <hr align="left">
       <div class="row" id="BriefPersonalBlurb">
         <h2>Life Summary</h2>
         <p>
-          Like so many others fortunate enough to witness the birth of the internet during their youth, my first serious foray into programming was an attempt to fit in with a peer group of teenage website makers in the late ninties. I hovered around but never fully embraced ... After parting ways for college (the entire peer group, myself being the exception, went on to select computer science majors) , I realized that I was not as skilled at mathematics as I had been led to believe and instead selected Ecology and Evolutionary Biology (EEB) as my major, thus beginning a lifelong love affair with ecosystems and critters (particularly ones that interact with one another in interesting ways). One BS degree in EEB and another degree-this time a Ph.D in Genetics wherein I studied fire ant populations, a sixth-month stint in Costa Rica running around studying moth populations near Monteverde, and two years of teaching biology at a university in the Pacific Northwest,
+          Like so many others fortunate enough to witness the birth of the internet in their youth, my first serious forays into programming (html and C++) were attempts to fit in with a peer group of teenage website makers and computer geeks in the late ninties. After cordially parting ways with both the peer group and programming for the allure and promise of college, I began what would become a lifelong love affair with ecosystems and critters (particularly ones that interact with one another in interesting ways) and selected <strong>Ecology and Evolutionary Biology (EEB)</strong> as my college major. This fascination with critters led to enrollment in a graduate program in <strong>Genetics</strong>, wherein I studied fire ant populations and inbreeding for six years. I left the program with a nice, crisp PhD and a refreshed enthusiasm for programming (forcing myself to learn some python and R are likely the only reasons that I was able to graduate) in 2013.
+        </p>
+        <p>
+          I then spent a sixth-month stint in Costa Rica running around studying moth populations near Monteverde, and then headed to Vancouver, WA, where I taught biology at Washington State Univeristy Vancouver for two years. Satisfied with and fulfilled by teaching as a career, but underwhelmed by the financial prospects of a long-term adjunct instructor, I applied for a position at Oregon Health and Science University (OHSU) as a computational biologist, where I was able to learn an incredible amount of biology and programming (command-line, job-scheduling, git, and a lot of R) before crumpling under the <em>constant</em> pressure and deciding to regroup and re-tool at Epicodus, where I am today.
+        </p>
+        <p>
+          I continue to love learning new things about programming and solving problems with code, and I continue to love ecosystems and critters (although bees have my attention more these days than ants do) and teaching. I hope some day to use the formermost to solve important problems or questions in the latter two. I'm eager to see where the adventures in coding take me in the meantime.
         </p>
       </div>
+      <hr align="left">
       <div class="resumeSection">
         <h1>Education</h1>
-        <ul>
-          <li><span class="date">Feb./2017..........Current</span> &nbsp &nbsp Here we can put </li>
-          <li><span class="date">Aug./2007..........Aug./2013</span> &nbsp &nbsp  University of Georgia </li>
-          <li><span class="date">12-4-2014</span> &nbsp &nbsp  that we think </li>
-          <li><span class="date">12-4-2014</span> &nbsp &nbsp  that will look ok </li>
-        </ul>
-        <hr align=left>
+        <table class="table table-striped">
+          <tr>
+            <th>Degree Type</th>
+            <th>Subject</th>
+            <th>Date Begun</th>
+            <th>Date Ended</th>
+            <th>Institution</th>
+            <th>Location</th>
+          </tr>
+          <tr>
+            <td>???</td>
+            <td>Coding??</td>
+            <td class="date">February, 2017</span></td>
+            <td class="date">Current</span></td>
+            <td><span class="epicodusSpirit">Epicodus</span></td>
+            <td>Portland, OR</td>
+          </tr>
+          <tr>
+            <td>Ph.D</td>
+            <td>Genetics</td>
+            <td class="date">August, 2007</span></td>
+            <td class="date">August, 2013</span></td>
+            <td>University of <span class="ugaSpirit"> Georgia</span></td>
+            <td>Athens, GA</td>
+          </tr>
+          <tr>
+            <td>B.S.</td>
+            <td>Ecology and Evolutionary Biology</td>
+            <td class="date">August, 2003</span></td>
+            <td class="date">May, 2007</span></td>
+            <td><span class="yaleSpirit">Yale</span> University</td>
+            <td>New Haven, CT</td>
+          </tr>
+        </table>
       </div>
-      <div class="resumeSection">
+      <hr align="left">
+      <div class="resumeSection" id="workExperience">
         <h1>Work Experience</h1>
-        <p>YOLO UNIVERSITY</p>
+        <div class="row">
+          <div class="col-xs-4">
+            <div class="panel panel-info" id="CompBio">
+              <div class="panel-heading">
+                <h2 class="panel-title projectTitle">Computational Biologist</h2>
+                <h3 class="panel-title projectSubitle">Bioinformatics Core and Integrated Genomics Laboratory, <strong>Oregon Health and Science University</strong></h3>
+              </div>
+              <div class="panel-body">
+                <p>Responsibilities included:</p>
+                <ol id="projectDetailList">
+                  <li>Analyzing large data sets for medical researchers using mostly custom R scripts as well as existing BioConductor packages</li>
+                  <li>Developing and organizing code-sharing practices and repositories for the Bioinformatics core</li>
+                  <li>Improving data management, workflow, organization, and client delivery for the Integrated Genomics Laboratory</li>
+                  <li>Working effectively with a team to deliver reports and reproducible underlying code for clients for both the Bioinformatics Core and Integrated Genomics Laboratory (in the form of Knitr reports)</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-4">
+            <div class="panel panel-info" id="AdjunctBio">
+              <div class="panel-heading">
+                <h2 class="panel-title projectTitle">Adjunct Instructor of Biology</h2>
+                <h3 class="panel-title projectSubitle"><strong>Washington State University Vancouver</strong>, School of Biological Sciences</h3>
+              </div>
+              <div class="panel-body">
+                <p>Responsibilities included:</p>
+                <ol id="projectDetailList">
+                  <li>Delivering lectures to following classes (click for course schedules):
+                    <ol>
+                      <li><a href="">Biology 301 (Genetics)</a> for two semesters</li>
+                        <li><a href="">Biology 403 (Evolution)</a> for four semesters</li>
+                        <li><a href="">Biology 438 (Animal Behavior and Lab)</a> for two semesters</li>
+                        <li><a href="">Entomology 103 (Discover Insects)</a> for one semester</li>
+                    </ol>
+                  </li>
+                  <li>Generating the following material for each class:
+                    <ol>
+                      <li>Weekly homework assignments</li>
+                      <li>Weekly learning objectives</li>
+                      <li>Exams (typically four per semester, but varied slightly by course)</li>
+                      <li>Lecture prezis and pdfs thereof</li>
+                      <li>Lab rubrics (Animal Behavior Labs)</li>
+                      <li>Graded feedback</li>
+                    </ol>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-4">
+            <div class="panel panel-info" id="CostaRicaMoth">
+              <div class="panel-heading">
+                <h2 class="panel-title projectTitle">Research Associate</h2>
+                <h3 class="panel-title projectSubitle"><strong>Discover Life</strong>, University of Georgia Costa Rica in Monteverde, Puntarenas, Costa Rica</h3>
+              </div>
+              <div class="panel-body">
+                <p>Responsibilities included:</p>
+                <ol id="projectDetailList">
+                  <li>Photographing moths on two large light traps nightly</li>
+                  <li><a href="https://youtu.be/bqUjI4pk60o">Uploading and curating the photos</a> on <a href="http://www.discoverlife.org/">Discover Life's public repository</a></li>
+                  <li>Applying for a collection permit through the Costa Rican government</li>
+                  <li>Collecting sample of 40 target species of interest using a protocol that preserves DNA and sample identity</li>
+                  <li>Inspecting abundance data for patterns yielding insight into climate, predator-prey dynamics, etc.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
         <hr align=left>
       </div>
       <div class="resumeSection">
@@ -63,12 +166,63 @@
       </div>
       <div class="resumeSection">
         <h1>References</h1>
-        <hr align=left>
-      </div>
-      <div class="resumeSection">
-        <h1>Other</h1>
+        <div class="Reference">
+          <div class="row">
+            <div class="col-xs-4">
+              <div class="panel panel-info" id="xxxx">
+                <div class="panel-heading">
+                  <h2 class="panel-title projectTitle">xxxx</h2>
+                  <h3 class="panel-title projectSubitle">xxxx</h3>
+                </div>
+                <div class="panel-body">
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-4">
+              <div class="panel panel-info" id="xxxx">
+                <div class="panel-heading">
+                  <h2 class="panel-title projectTitle">xxxx</h2>
+                  <h3 class="panel-title projectSubitle">xxxx</h3>
+                </div>
+                <div class="panel-body">
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-4">
+              <div class="panel panel-info" id="xxxx">
+                <div class="panel-heading">
+                  <h2 class="panel-title projectTitle">xxxx</h2>
+                  <h3 class="panel-title projectSubitle"><strong>xxxx</h3>
+                  </div>
+                  <div class="panel-body">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr align=left>
+        </div>
+        <div class="resumeSection">
+          <h1>Hobbies and Skills</h1>
+          <ul>
+            <li>Brown belt in Brazilian Jiu Jitsu</li>
+            <li>Volunteer instructor of Brazilian Jiu-Jitsu at Straight Blast Gym in Portland, OR</li>
+            <li>[Human] Languages:</li>
+            <ul>
+              <li>Conversational in Spanish</li>
+              <li>Rusty intermediate-level German</li>
+              <li>Beginner-level Italian</li>
+            </ul>
+            <li>Hydroponic and outdoor vegetable gardening</li>
+            <li>Animal/Plant husbandry:</li>
+            <ul>
+              <li>Amateur beekeeper</li>
+              <li>Carnivorous plant enthusiast and collector</li>
+              <li>Aquarium owner and enthusiast (freshwater and saltwater)</li>
+            </ul>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-</body>
-</html>
+  </body>
+  </html>
