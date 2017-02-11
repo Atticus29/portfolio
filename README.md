@@ -1,40 +1,46 @@
 
-# A bash script tool to help streamline creation of new websites for Epicodus
+# Projet Title
+Portfolio website
 
-#### 8 Feb., 2017, v.1.0.0
+# Date and version
+10 Feb., 2017, v.1.0.0
 
-#### By _Mark Fisher and Clifford Grimmell_
+# Author
+Mark Fisher
 
-## Description
+# Description
+A website that serves as the entry point for potential employers to see examples of my work and resume details. Currently contains three inter-connected pages: index.html (the landing site, which is unfortunately the least mature), projects.html (which showcases some choice repos.), and about.html (which contains employment and education details that are typically found in a resume)
 
-This script takes three arguments from the user (repo name, parter 1 initials, and partner 2 initials), and uses those variables to create a directory with repo name, create a "css" subdirectory, create an "img" subdirectory, create a styles.css document in the css subdirectory, create an index.html document in the repo folder, initialized the folder as a git repo, executes `git pair` with partner 1's and partner 2's intials, adds everything, makes a first paired commit, and opens the directory in atom.
+## Setup/Installation
 
-## Setup/Installation Requirements
+* This repository is meant to be viewed. It can be viewed [here](https://Atticus29.github.io/portfolio).
 
-* _clone this repo. (to your Desktop)_
-* _open terminal_
-* _type_ `~/Desktop/websiteRepoSetup/./websiteRepoSetup.sh [yourRepoName] [partner1Initials] [partner2Initials]`
-* _enjoy_
+### Or if you're in a weird mood and want to work on this even though you're not me:
+* Open your terminal
+* Clone this repo. by typing, `git clone https://github.com/Atticus29/portfolio.git`
+* Work, commit, and push changes. Issue a pull request for me.
 
 
 ## Known Bugs
 
-_There are no known bugs. I'd be interested to know if you find any._
+There are no known bugs. I'd be interested to know if you find any.
 
 ## Support and contact details
 
-_Please feel free to contact mark.aaron.fisher@gmail.com for questions_
+Please feel free to contact mark.aaron.fisher@gmail.com for questions.
 
-## Technologies Used
+## Technologies and tools Used
 
-_bash_
-_git_
+* _bootstrap_
+* _git_
+* _html_
+* _css_
 
 ### License
 
 *This software is licensed under the MIT license.*
 
-Copyright (c) 2017 Mark Fisher and Clifford Grimmell
+Copyright (c) 2017 Mark Fisher
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

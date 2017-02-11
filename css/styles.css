@@ -21,7 +21,7 @@ p{
   font-family: monospace;
   font-weight: normal;
 }
-img{
+img{ /*I could see this becoming risky #Attn*/
   float: left;
   padding-right: 1%;
 }
@@ -42,25 +42,23 @@ h4{
   font-variant: small-caps;
   font-weight: bold;
 }
-
 .date{
   font-weight: bold;
   font-style: italic;
 }
-
 .ugaSpirit{
   color: red;
 }
-
 .yaleSpirit{
   color: blue;
 }
-
 .epicodusSpirit{
   color: blue;
 }
-
 li .resumeSection{ /*I'm not sure why this isn't working*/
   font-style: normal;
   font-family: cursive;
+}
+.contacInfoList{
+  list-style: none;
 }
